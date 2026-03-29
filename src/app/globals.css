@@ -1,26 +1,136 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* AISB Brand Colors */
+  --color-primary-dark: #07080a;
+  --color-primary-black: #282b32;
+  --color-neutral-dark: #363636;
+  --color-neutral-mid: #545454;
+  --color-neutral-light: #5C5C5C;
+  --color-neutral-border: #e2e4ea;
+  --color-bg-light: #f5f6f8;
+  --color-bg-card: #fcfcfc;
+  --color-bg-subtle: #F6F6F6;
+  --color-white: #ffffff;
+
+  /* AISB Accent Colors */
+  --color-accent-magenta: #84246d;
+  --color-accent-pink: #e74771;
+  --color-accent-pink-dark: #de1d50;
+  --color-accent-rose: #ea5e83;
+  --color-accent-soft-pink: #f2d4ec;
+  --color-accent-yellow: #f5d880;
+  --color-accent-green: #a8e6cf;
+  --color-accent-purple: #84246d;
+  --color-accent-lavender: #b8bcf8;
+  --color-accent-lavender-light: #d5d8fc;
+  --color-accent-blue-soft: #b8bcf8;
+  --color-accent-deep-purple: #7a2065;
+  --color-accent-mint: #a8e6cf;
+
+  /* Typography */
+  --font-heading: 'Georgia', 'Times New Roman', 'Borna', serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Georgia', 'Times New Roman', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base Styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  color: var(--color-neutral-dark);
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-mid);
+}
+
+/* AISB-style button base */
+.btn-black {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--color-primary-dark);
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.btn-black:hover {
+  background: var(--color-neutral-dark);
+  border-color: var(--color-neutral-dark);
+}
+
+.btn-pink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-accent-pink);
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-pink:hover {
+  background: var(--color-accent-pink-dark);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  color: var(--color-primary-dark);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color-neutral-border);
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  border-color: var(--color-primary-dark);
 }

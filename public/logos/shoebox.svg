@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="40" fill="#e74c3c"/>
+  <!-- Shopping bag icon -->
+  <path d="M22 32 L18 60 C18 62 20 64 22 64 L58 64 C60 64 62 62 62 60 L58 32 Z" fill="white"/>
+  <!-- Bag handles -->
+  <path d="M30 32 C30 24 34 18 40 18 C46 18 50 24 50 32" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bag detail -->
+  <line x1="22" y1="38" x2="58" y2="38" stroke="#e74c3c" stroke-width="1" opacity="0.3"/>
+  <!-- Shoe silhouette on bag -->
+  <path d="M28 48 L28 52 L52 52 L52 48 L44 46 L36 46 Z" fill="#e74c3c" opacity="0.2"/>
+</svg>

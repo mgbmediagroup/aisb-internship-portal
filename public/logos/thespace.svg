@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="40" fill="#8e44ad"/>
+  <!-- Paint Palette -->
+  <path d="M40 18 C26 18 18 28 18 40 C18 52 26 60 38 60 C42 60 44 57 44 55 C44 53 42 51 42 49 C42 46 44 44 48 44 L52 44 C58 44 62 40 62 34 C62 24 52 18 40 18Z" fill="white"/>
+  <!-- Color dots on palette -->
+  <circle cx="30" cy="32" r="3.5" fill="#e74c3c"/>
+  <circle cx="38" cy="27" r="3.5" fill="#f39c12"/>
+  <circle cx="48" cy="29" r="3.5" fill="#27ae60"/>
+  <circle cx="52" cy="37" r="3.5" fill="#2980b9"/>
+  <circle cx="28" cy="42" r="3.5" fill="#8e44ad"/>
+</svg>

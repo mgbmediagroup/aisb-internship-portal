@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="40" fill="#2c3e50"/>
+  <!-- Scales of Justice -->
+  <line x1="40" y1="20" x2="40" y2="56" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="24" y1="30" x2="56" y2="30" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Left pan -->
+  <line x1="24" y1="30" x2="20" y2="42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <line x1="24" y1="30" x2="28" y2="42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 42 Q24 48 30 42" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right pan -->
+  <line x1="56" y1="30" x2="52" y2="42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <line x1="56" y1="30" x2="60" y2="42" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <path d="M50 42 Q56 48 62 42" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <!-- Base -->
+  <rect x="32" y="56" width="16" height="2.5" rx="1" fill="white"/>
+  <!-- Top ornament -->
+  <circle cx="40" cy="20" r="3" fill="white"/>
+</svg>

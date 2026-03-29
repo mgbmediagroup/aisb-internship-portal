@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="40" fill="#9b59b6"/>
+  <!-- Brain/Lightbulb combo -->
+  <!-- Lightbulb shape -->
+  <path d="M30 36 C30 26 34 18 40 18 C46 18 50 26 50 36 C50 42 46 44 46 48 L34 48 C34 44 30 42 30 36Z" fill="white"/>
+  <!-- Brain texture lines -->
+  <path d="M35 28 C38 26 42 28 40 32 C38 36 42 36 44 34" fill="none" stroke="#9b59b6" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M36 34 C38 32 42 34 40 38 C38 40 44 40 44 38" fill="none" stroke="#9b59b6" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Bulb base -->
+  <rect x="34" y="48" width="12" height="2" rx="0.5" fill="white"/>
+  <rect x="35" y="51" width="10" height="2" rx="0.5" fill="white"/>
+  <rect x="36" y="54" width="8" height="2" rx="0.5" fill="white"/>
+  <!-- Light rays -->
+  <line x1="40" y1="12" x2="40" y2="15" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="24" y1="24" x2="26" y2="26" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="56" y1="24" x2="54" y2="26" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="20" y1="38" x2="23" y2="38" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="60" y1="38" x2="57" y2="38" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+</svg>

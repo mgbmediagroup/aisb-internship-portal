@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="40" fill="#2d3436"/>
+  <!-- Car/Gear icon - steering wheel style -->
+  <circle cx="40" cy="40" r="18" fill="none" stroke="white" stroke-width="3"/>
+  <circle cx="40" cy="40" r="4" fill="white"/>
+  <!-- Three-pointed star spokes -->
+  <line x1="40" y1="36" x2="40" y2="22" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="36.5" y1="42" x2="25" y2="50" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="43.5" y1="42" x2="55" y2="50" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

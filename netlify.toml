@@ -1,0 +1,10 @@
+[build]
+  command = "npx prisma generate && npm run build"
+  publish = ".next"
+
+[build.environment]
+  NEXTAUTH_SECRET = "aisb-internship-portal-secret-key"
+  NEXTAUTH_URL = "https://aisb-internship-portal.netlify.app"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

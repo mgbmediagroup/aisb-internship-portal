@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="40" fill="#c0932b"/>
+  <!-- Four-pointed star with leaf feel -->
+  <path d="M40 18 L44 34 L56 28 L46 38 L62 40 L46 42 L56 52 L44 46 L40 62 L36 46 L24 52 L34 42 L18 40 L34 38 L24 28 L36 34 Z" fill="white"/>
+  <!-- Inner accent -->
+  <circle cx="40" cy="40" r="6" fill="#c0932b"/>
+  <circle cx="40" cy="40" r="3" fill="white"/>
+</svg>

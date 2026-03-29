@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="40" fill="#e84393"/>
+  <!-- Heart with medical cross -->
+  <path d="M40 58 C40 58 18 42 18 30 C18 22 24 18 30 18 C34 18 38 20 40 24 C42 20 46 18 50 18 C56 18 62 22 62 30 C62 42 40 58 40 58Z" fill="white"/>
+  <!-- Medical cross on heart -->
+  <rect x="37" y="30" width="6" height="16" rx="1" fill="#e84393"/>
+  <rect x="32" y="35" width="16" height="6" rx="1" fill="#e84393"/>
+</svg>

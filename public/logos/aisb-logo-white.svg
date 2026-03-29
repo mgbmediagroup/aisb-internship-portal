@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" fill="none">
+  <circle cx="22" cy="25" r="21" stroke="#ffffff" stroke-width="2" fill="none"/>
+  <path d="M10 36 L16 18 L22 12 L28 18 L34 36" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="12" y1="30" x2="32" y2="30" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="16" y1="24" x2="28" y2="24" stroke="#ffffff" stroke-width="1.2"/>
+  <line x1="16" y1="18" x2="16" y2="36" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="28" y1="18" x2="28" y2="36" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="22" y1="12" x2="22" y2="36" stroke="#ffffff" stroke-width="1.5"/>
+  <line x1="8" y1="36" x2="36" y2="36" stroke="#ffffff" stroke-width="2"/>
+  <text x="52" y="22" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="20" fill="#ffffff" letter-spacing="1">AISB</text>
+  <text x="52" y="33" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="6.5" fill="#ffffff" letter-spacing="0.8">AMERICAN INTERNATIONAL</text>
+  <text x="52" y="42" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="6.5" fill="#ffffff" letter-spacing="0.8">SCHOOL OF BUDAPEST</text>
+</svg>

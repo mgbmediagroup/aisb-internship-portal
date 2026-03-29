@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AISB Student Internship Portal
 
-## Getting Started
+A full-stack web application for American International School of Budapest (AISB) students to discover, search, and apply to internship opportunities. Built with Next.js, Tailwind CSS, Prisma, and SQLite.
 
-First, run the development server:
+## Features
+
+- **Homepage** — Hero section, how-it-works steps, featured internships, partner company grid, animated counters
+- **Browse Internships** — Search, filter by field/location/duration, sort options
+- **Internship Detail** — Full description, requirements, deadline countdown, company sidebar, apply CTA
+- **Company Listings** — Grid of partner companies with open position counts
+- **Company Detail** — Company profile with all current internship openings
+- **Application Flow** — Multi-step form (personal info, CV upload, cover letter, review & submit)
+- **Admin Dashboard** — Login-protected; manage internships (add/edit/delete), view applications, analytics
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS v4 with AISB brand tokens
+- **Database**: SQLite via Prisma ORM + better-sqlite3 adapter
+- **Auth**: NextAuth.js with credential-based login
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+
+## Setup
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
 
 ```bash
+# Clone the repo
+git clone <repo-url>
+cd aisb-internship-portal
+
+# Install dependencies
+npm install
+
+# Generate Prisma client
+npx prisma generate
+
+# Run database migrations
+npx prisma migrate dev
+
+# Seed the database with sample data
+npx tsx prisma/seed.ts
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Admin Access
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **URL**: [http://localhost:3000/admin](http://localhost:3000/admin)
+- **Email**: `admin@aisb.hu`
+- **Password**: `admin123`
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── page.tsx                    # Homepage
+│   ├── layout.tsx                  # Root layout with Navbar & Footer
+│   ├── globals.css                 # Tailwind config with AISB brand tokens
+│   ├── internships/
+│   │   ├── page.tsx                # Browse internships with filters
+│   │   ├── InternshipFilters.tsx   # Client-side filter component
+│   │   └── [id]/page.tsx           # Internship detail page
+│   ├── companies/
+│   │   ├── page.tsx                # Company listings grid
+│   │   └── [id]/page.tsx           # Company detail page
+│   ├── apply/
+│   │   └── [internshipId]/
+│   │       ├── page.tsx            # Application page
+│   │       └── ApplicationForm.tsx # Multi-step application form
+│   ├── admin/
+│   │   ├── page.tsx                # Admin dashboard (protected)
+│   │   ├── AdminDashboard.tsx      # Dashboard client component
+│   │   └── login/page.tsx          # Admin login page
+│   └── api/
+│       ├── auth/[...nextauth]/     # NextAuth API route
+│       ├── internships/            # CRUD API for internships
+│       ├── companies/              # Companies API
+│       └── applications/           # Applications API
+├── components/
+│   ├── Navbar.tsx                  # Sticky navigation with frosted glass
+│   ├── Footer.tsx                  # Dark footer with AISB info
+│   ├── InternshipCard.tsx          # Reusable internship card
+│   ├── AnimatedSection.tsx         # Scroll-triggered fade-in wrapper
+│   └── Counter.tsx                 # Animated number counter
+├── lib/
+│   ├── prisma.ts                   # Prisma client singleton
+│   ├── auth.ts                     # NextAuth configuration
+│   └── utils.ts                    # Utility functions (cn, formatDate, etc.)
+└── generated/prisma/               # Generated Prisma client
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Database
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The app uses SQLite for easy local development. The database file is at `dev.db` in the project root.
 
-## Deploy on Vercel
+### Seeded Data
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The seed script populates the database with 18 real internship opportunities from the AISB internship contacts list, including companies like:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- InterContinental Budapest (Hospitality)
+- Dentons (Law)
+- UNLEASH.ai (Media & Events)
+- Four Seasons Hotel Budapest (Hospitality)
+- Budapest Business Journal (Journalism)
+- Mercedes-Benz Manufacturing Hungary (Automotive)
+- Ferrari Budapest (Automotive)
+- And more...
+
+## AISB Brand Design System
+
+The app uses the official AISB color palette and typography to match aisb.hu:
+
+- **Primary accent**: `#84246d` (Magenta)
+- **Secondary accent**: `#e74771` (Pink)
+- **Headings**: Borna font family (bold, clean, modern)
+- **Body**: Pockota font family (warm, readable)
+- **Layout**: Frosted glass navbar, alternating section backgrounds, rounded cards with subtle shadows
