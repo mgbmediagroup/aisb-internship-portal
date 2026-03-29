@@ -4,7 +4,7 @@ import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-accent-magenta text-white">
+    <footer className="bg-primary-dark text-white">
       {/* CTA Band */}
       <div className="border-b border-white/10">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10 py-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">

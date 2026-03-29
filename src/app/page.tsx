@@ -26,7 +26,7 @@ export default async function HomePage() {
   return (
     <div>
       {/* ===== HERO SECTION ===== */}
-      <section className="relative min-h-[100vh] flex items-end overflow-hidden bg-accent-magenta">
+      <section className="relative min-h-[100vh] flex items-end overflow-hidden bg-primary-dark">
         {/* Background hero image */}
         <Image
           src="/images/hero.jpg"
@@ -60,14 +60,14 @@ export default async function HomePage() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/internships"
-                  className="inline-flex items-center justify-between gap-8 bg-accent-deep-purple/90 backdrop-blur-sm text-white font-medium text-lg px-8 py-4 rounded-full border border-white/10 hover:bg-accent-deep-purple transition-colors min-w-[240px]"
+                  className="inline-flex items-center justify-between gap-8 bg-primary-dark/90 backdrop-blur-sm text-white font-medium text-lg px-8 py-4 rounded-full border border-white/10 hover:bg-primary-dark transition-colors min-w-[240px]"
                 >
                   Browse Internships
                   <ArrowRight className="w-5 h-5" />
                 </Link>
                 <Link
                   href="/companies"
-                  className="inline-flex items-center justify-between gap-8 bg-accent-deep-purple/90 backdrop-blur-sm text-white font-medium text-lg px-8 py-4 rounded-full border border-white/10 hover:bg-accent-deep-purple transition-colors min-w-[240px]"
+                  className="inline-flex items-center justify-between gap-8 bg-primary-dark/90 backdrop-blur-sm text-white font-medium text-lg px-8 py-4 rounded-full border border-white/10 hover:bg-primary-dark transition-colors min-w-[240px]"
                 >
                   View Companies
                   <ArrowRight className="w-5 h-5" />
@@ -184,7 +184,7 @@ export default async function HomePage() {
       </section>
 
       {/* ===== STATS ===== */}
-      <section className="py-20 bg-accent-magenta">
+      <section className="py-20 bg-primary-dark">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 sm:gap-8">
             <Counter end={totalInternships} suffix="+" label="Internships Available" />

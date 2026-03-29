@@ -96,7 +96,7 @@ export default function Navbar() {
         )}
       >
         {/* Backdrop */}
-        <div className="absolute inset-0 bg-accent-magenta/95 backdrop-blur-xl" />
+        <div className="absolute inset-0 bg-primary-dark/95 backdrop-blur-xl" />
 
         <div className="relative z-10 h-full flex flex-col justify-center max-w-[1440px] mx-auto px-10 lg:px-20">
           <div className="space-y-2">
