@@ -1,14 +1,11 @@
 import { PrismaClient } from "../src/generated/prisma/client.js";
-import { PrismaLibSQL } from "@prisma/adapter-libsql";
-import { createClient } from "@libsql/client";
+import { PrismaLibSql } from "@prisma/adapter-libsql";
 import { hash } from "bcryptjs";
-import "dotenv/config";
 
-const client = createClient({
+const adapter = new PrismaLibSql({
   url: process.env.TURSO_DATABASE_URL!,
   authToken: process.env.TURSO_AUTH_TOKEN,
 });
-const adapter = new PrismaLibSQL(client);
 const prisma = new PrismaClient({ adapter });
 
 async function main() {
