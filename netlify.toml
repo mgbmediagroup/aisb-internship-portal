@@ -2,11 +2,5 @@
   command = "npx prisma generate && npm run build"
   publish = ".next"
 
-[build.environment]
-  NEXTAUTH_SECRET = "aisb-internship-portal-secret-key"
-  NEXTAUTH_URL = "https://aisb-internship-portal.netlify.app"
-  TURSO_DATABASE_URL = "libsql://aisb-internship-portal-mateballnut.aws-eu-west-1.turso.io"
-  TURSO_AUTH_TOKEN = "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NzQ4MDE1OTQsImlkIjoiMDE5ZDNhNmEtZjcwMS03Mjc3LTlmYTUtZjcyMjc2YjU1NWUxIiwicmlkIjoiMzY0N2RiMTEtNzA1ZC00N2Y4LTkxMjYtYzUyZGNhZjE2ODBjIn0.MTVDslmCGzjlU9qtn3uw9ozd_hOB-M70jT9WBQeqhAsBRyWcF40eb5Wt1ZRUuI71ip8vE6a_jRMyl7mnREboAw"
-
 [[plugins]]
   package = "@netlify/plugin-nextjs"
